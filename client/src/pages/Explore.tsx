@@ -53,13 +53,11 @@ export default function Explore() {
           </div>
           
           <div className="lg:col-span-3 bg-white/50 p-2 rounded-3xl h-[600px] lg:h-auto lg:flex-1 relative shadow-inner border border-slate-200/60 overflow-hidden">
-            <iframe 
-              className="absolute inset-2 w-[calc(100%-1rem)] h-[calc(100%-1rem)] rounded-2xl shadow-md"
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_BROWSER_KEY}&q=Mangaluru`}
-            ></iframe>
+            <img 
+              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000"
+              alt="City Map"
+              className="absolute inset-2 w-[calc(100%-1rem)] h-[calc(100%-1rem)] rounded-2xl shadow-md object-cover"
+            />
           </div>
         </div>
       </div>
