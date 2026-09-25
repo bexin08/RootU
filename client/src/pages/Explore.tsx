@@ -53,11 +53,15 @@ export default function Explore() {
           </div>
           
           <div className="lg:col-span-3 bg-white/50 p-2 rounded-3xl h-[600px] lg:h-auto lg:flex-1 relative shadow-inner border border-slate-200/60 overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000"
-              alt="City Map"
-              className="absolute inset-2 w-[calc(100%-1rem)] h-[calc(100%-1rem)] rounded-2xl shadow-md object-cover"
-            />
+            <div className="absolute inset-2 w-[calc(100%-1rem)] h-[calc(100%-1rem)] rounded-2xl shadow-md overflow-hidden pointer-events-none">
+              <iframe 
+                className="w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124424.36398910813!2d74.79379659021206!3d12.923101569766922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1714545233663!5m2!1sen!2sin"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
