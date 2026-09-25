@@ -9,8 +9,8 @@ if (!process.env.GEMINI_API_KEY) {
 export const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export const MODELS = {
-  chat: process.env.GEMINI_CHAT_MODEL ?? "gemini-3.5-flash",
-  background: process.env.GEMINI_BACKGROUND_MODEL ?? "gemini-3.5-flash",
+  chat: process.env.GEMINI_CHAT_MODEL ?? "gemini-1.5-flash",
+  background: process.env.GEMINI_BACKGROUND_MODEL ?? "gemini-1.5-flash",
   embedding: process.env.GEMINI_EMBEDDING_MODEL ?? "gemini-embedding-2",
 } as const;
 
